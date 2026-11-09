@@ -1,0 +1,12 @@
+[project]
+name = "conversor-unidades"
+version = "0.1.0"
+description = "Conversor de unidades (comprimento, massa, volume e temperatura) em Python."
+requires-python = ">=3.10"
+
+[project.scripts]
+conversor = "conversor.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
